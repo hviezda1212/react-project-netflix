@@ -10,7 +10,7 @@ import logoImg from "../assets/images/netflix-logo.png";
 const AppLayout = () => {
   return (
     <div>
-      <Navbar variant="" expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
           <Link to="/" className="logo">
             <img width={90} src={logoImg} alt="Netfilx logo" />
@@ -21,8 +21,8 @@ const AppLayout = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Link</Nav.Link>
+            <Link to="/" className="navbar-link">Home</Link>
+            <Link to="/Movies" className="navbar-link">Movies</Link>
             </Nav>
             <Form className="d-flex">
               <Form.Control

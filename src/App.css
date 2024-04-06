@@ -1,4 +1,13 @@
-.nav-button {
-  --bs-btn-color: #fff;
-  background-color: red;
+:root {
+  --bs-body-bg: black !important;
+  --bs-tertiary-bg-rgb : black !important;
+}
+
+.navbar-link {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
 }
