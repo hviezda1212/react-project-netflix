@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Outlet, Link } from "react-router-dom";
-import logoImg from "../assets/images/netflix-logo.png";
+import logoImg from "../assets/images/logo.svg";
 
 const AppLayout = () => {
   return (
