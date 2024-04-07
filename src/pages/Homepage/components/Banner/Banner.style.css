@@ -2,7 +2,7 @@
   height: 56vh;
   background-position: left;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
 .banner:before {
   content: "";
@@ -14,12 +14,18 @@
 }
 .banner-text-area {
   width: 36%;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  height:100%;
-  padding:2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
 }
-.banner-text-area > *{
-    z-index:2;
+.banner-text-area h1 {
+  color: red;
+}
+.banner-text-area p {
+  color: white;
+}
+.banner-text-area > * {
+  z-index: 2;
 }

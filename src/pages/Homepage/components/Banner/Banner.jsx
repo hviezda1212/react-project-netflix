@@ -13,18 +13,18 @@ const Banner = () => {
   if (isError) {
     <Alert variant="danger">{error.message}</Alert>;
   }
-  
+
   return (
     <div
       style={{
-        backgroundImag:
+        backgroundImage:
           "url(" +
           `https://media.themoviedb.org/t/p/w1066_and_h600_bestv2${data?.results[0].backdrop_path}` +
           ")",
       }}
       className="banner"
     >
-      <div className="text-white banner-text-area">
+      <div className="banner-text-area">
         <h1>{data?.results[0].title}</h1>
         <p>{data?.results[0].overview}</p>
       </div>
