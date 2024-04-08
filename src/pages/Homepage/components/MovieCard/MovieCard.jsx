@@ -14,11 +14,11 @@ const MovieCard = ({ movie }) => {
       className="movie-card"
     >
       <div className="overlay">
-        <h1>{movie.title}</h1>
+        <h2>{movie.title}</h2>
         {movie.genre_ids.map((id) => (
           <Badge bg="danger">{id}</Badge>
         ))}
-        <div>
+        <div className="card-info">
           <div>{movie.vote_average}</div>
           <div>{movie.popularity}</div>
           <div>{movie.adult ? "over18" : "under18"}</div>
