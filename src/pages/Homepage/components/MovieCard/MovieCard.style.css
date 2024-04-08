@@ -18,6 +18,13 @@
   padding: 20px;
 }
 
+.overlay h2 {
+  padding-bottom:5px;
+  border-bottom: 1px white solid;
+}
+.overlay span {
+  margin-right: 5px;
+}
 .overlay:hover {
   opacity: 1;
 }
@@ -27,6 +34,31 @@
   z-index: 2;
 }
 
-.card-info{
+.overlay-info{
   margin-top:10px;
+}
+.overlay-info svg {
+  margin-right: 10px;
+}
+.adult {
+  color: var(--color-crimson);
+  font-style: italic;
+}
+/* 태블릿 */
+@media (max-width: 768px) {
+  .overlay-info {
+    font-size: 0.8rem;
+  }
+  .overlay-info > * {
+    margin-right: 7px;
+  }
+}
+/* 모바일 */
+@media (max-width: 430px) {
+  .overlay-info {
+    font-size: 0.7rem;
+  }
+  .overlay-info > * {
+    margin-right: 5px;
+  }
 }

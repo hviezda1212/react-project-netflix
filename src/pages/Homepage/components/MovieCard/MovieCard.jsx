@@ -1,6 +1,9 @@
 import React from "react";
 import { Badge } from "react-bootstrap";
-import "./MovieCard.style.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faImdb } from '@fortawesome/free-brands-svg-icons';
+import "./MovieCard.style.css";
 
 const MovieCard = ({ movie }) => {
   return (
@@ -18,10 +21,22 @@ const MovieCard = ({ movie }) => {
         {movie.genre_ids.map((id) => (
           <Badge bg="danger">{id}</Badge>
         ))}
-        <div className="card-info">
-          <div>{movie.vote_average}</div>
-          <div>{movie.popularity}</div>
-          <div>{movie.adult ? "over18" : "under18"}</div>
+        <div className="overlay-info">
+          <div>
+          <FontAwesomeIcon
+            icon={faImdb}
+            style={{ color: `var(--color-yellow)` }}
+          />
+          <span>{movie?.vote_average}</span>
+          </div>
+          <div>
+          <FontAwesomeIcon
+            icon={faUsers}
+            style={{ color: `var(--color-light-slate-gray)` }}
+          />
+          <span>{movie?.popularity}</span>
+          </div>
+          <span className="adult">{movie?.adult ? "over 18" : "under 18"}</span>
         </div>
       </div>
     </div>
