@@ -44,6 +44,7 @@
   color: var(--color-crimson);
   font-style: italic;
 }
+
 /* 태블릿 */
 @media (max-width: 768px) {
   .overlay-info {

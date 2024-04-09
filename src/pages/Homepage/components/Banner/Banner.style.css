@@ -34,4 +34,10 @@
   .banner-text-area{
       width: 100%;
   }
+  .banner {
+    background: center/cover no-repeat;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    position: relative;
+  }
 }

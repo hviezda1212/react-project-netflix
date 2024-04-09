@@ -12,5 +12,6 @@ h3 {
         height:330px;
         display:flex;
         justify-content:space-between;
+        margin-bottom:50px;
     }
 }
