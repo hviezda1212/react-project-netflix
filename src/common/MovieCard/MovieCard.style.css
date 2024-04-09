@@ -47,6 +47,9 @@
 
 /* 태블릿 */
 @media (max-width: 768px) {
+  .overlay{
+    padding: 50px;
+  }
   .overlay-info {
     font-size: 0.8rem;
   }
