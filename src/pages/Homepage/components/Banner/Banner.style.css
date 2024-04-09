@@ -29,3 +29,9 @@
 .banner-text-area > * {
   z-index: 2;
 }
+
+@media (max-width:480px) {
+  .banner-text-area{
+      width: 100%;
+  }
+}
