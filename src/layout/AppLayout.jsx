@@ -21,12 +21,15 @@ const AppLayout = () => {
     <div>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
-          <Link to="/" className="logo">
-            <img width={90} src={logoImg} alt="Netfilx logo" />
-          </Link>
+          <Navbar.Brand href="/">
+            <Link to="/" className="logo">
+              <img width={90} src={logoImg} alt="Netfilx logo" />
+            </Link>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
-              className="me-auto my-2 my-lg-0"
+              className="me-auto my-2 my-lg-0 text-white"
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
@@ -46,7 +49,9 @@ const AppLayout = () => {
                 value={keyword}
                 onChange={(event) => setKeyword(event.target.value)}
               />
-              <Button variant="outline-danger" type='submit' style={{ font:'small-caption'}}>Search</Button>
+              <Button variant="outline-danger" type="submit">
+                Search
+              </Button>
             </Form>
           </Navbar.Collapse>
         </Container>
