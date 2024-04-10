@@ -10,11 +10,12 @@ import logoImg from "../assets/images/logo.svg";
 const AppLayout = () => {
   const [keyword, setKeyword] = useState("");
   const navigate = useNavigate();
+
   const searchByKeyword = (event) => {
     event.preventDefault();
-    navigate(`/movies?q=${keyword}`);
-    setKeyword("");
-
+    if (keyword.trim() !== "") {
+      navigate(`/movies?q=${keyword}`);
+    }
   };
   return (
     <div>
@@ -45,7 +46,7 @@ const AppLayout = () => {
                 value={keyword}
                 onChange={(event) => setKeyword(event.target.value)}
               />
-              <Button variant="outline-danger">Search</Button>
+              <Button variant="outline-danger" type='submit' style={{ font:'small-caption'}}>Search</Button>
             </Form>
           </Navbar.Collapse>
         </Container>
