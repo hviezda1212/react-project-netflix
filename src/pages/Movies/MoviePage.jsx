@@ -123,28 +123,27 @@ const MoviePage = () => {
             ))}
           </Row>
           <div className="paginationContainer">
-          <ReactPaginate
-
-            nextLabel=">"
-            onPageChange={handlePageClick}
-            pageRangeDisplayed={3}
-            marginPagesDisplayed={1}
-            pageCount={data?.total_pages}
-            previousLabel="<"
-            pageClassName="page-item"
-            pageLinkClassName="page-link bg-dark border-dark text-white"
-            previousClassName="page-item"
-            previousLinkClassName="page-link bg-dark border-dark text-white"
-            nextClassName="page-item"
-            nextLinkClassName="page-link bg-dark border-dark text-white"
-            breakLabel="..."
-            breakClassName="page-item "
-            breakLinkClassName="page-link bg-dark border-dark text-white"
-            containerClassName="pagination d-flex justify-content-center pt-5"
-            activeClassName="active"
-            renderOnZeroPageCount={null}
-            forcePage={page - 1}
-          />
+            <ReactPaginate
+              nextLabel=">"
+              onPageChange={handlePageClick}
+              pageRangeDisplayed={3}
+              marginPagesDisplayed={1}
+              pageCount={data?.total_pages}
+              previousLabel="<"
+              pageClassName="page-item"
+              pageLinkClassName="page-link bg-dark border-dark text-white"
+              previousClassName="page-item"
+              previousLinkClassName="page-link bg-dark border-dark text-white"
+              nextClassName="page-item"
+              nextLinkClassName="page-link bg-dark border-dark text-white"
+              breakLabel="..."
+              breakClassName="page-item "
+              breakLinkClassName="page-link bg-dark border-dark text-white"
+              containerClassName="pagination d-flex justify-content-center pt-5"
+              activeClassName="active"
+              renderOnZeroPageCount={null}
+              forcePage={page - 1}
+            />
           </div>
         </Col>
       </Row>
