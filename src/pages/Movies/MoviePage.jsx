@@ -8,7 +8,6 @@ import MovieCard from "../../common/MovieCard/MovieCard";
 import LoadingSpinner from "../../common/Spinner/LoadingSpinner";
 import "../Movies/MoviePage.style.css";
 
-const PAGE_SIZE = 10;
 const MoviePage = () => {
   const [query] = useSearchParams();
   const [page, setPage] = useState(1);
@@ -122,29 +121,27 @@ const MoviePage = () => {
               </Col>
             ))}
           </Row>
-          <div className="paginationContainer">
-            <ReactPaginate
-              nextLabel=">"
-              onPageChange={handlePageClick}
-              pageRangeDisplayed={3}
-              marginPagesDisplayed={1}
-              pageCount={data?.total_pages}
-              previousLabel="<"
-              pageClassName="page-item"
-              pageLinkClassName="page-link bg-dark border-dark text-white"
-              previousClassName="page-item"
-              previousLinkClassName="page-link bg-dark border-dark text-white"
-              nextClassName="page-item"
-              nextLinkClassName="page-link bg-dark border-dark text-white"
-              breakLabel="..."
-              breakClassName="page-item "
-              breakLinkClassName="page-link bg-dark border-dark text-white"
-              containerClassName="pagination d-flex justify-content-center pt-5"
-              activeClassName="active"
-              renderOnZeroPageCount={null}
-              forcePage={page - 1}
-            />
-          </div>
+          <ReactPaginate
+            nextLabel=">"
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={3}
+            marginPagesDisplayed={1}
+            pageCount={data?.total_pages}
+            previousLabel="<"
+            pageClassName="page-item"
+            pageLinkClassName="page-link bg-dark border-dark text-white"
+            previousClassName="page-item"
+            previousLinkClassName="page-link bg-dark border-dark text-white"
+            nextClassName="page-item"
+            nextLinkClassName="page-link bg-dark border-dark text-white"
+            breakLabel="..."
+            breakClassName="page-item "
+            breakLinkClassName="page-link bg-dark border-dark text-white"
+            containerClassName="pagination d-flex justify-content-center pt-5"
+            activeClassName="active"
+            renderOnZeroPageCount={null}
+            forcePage={page - 1}
+          />
         </Col>
       </Row>
     </Container>

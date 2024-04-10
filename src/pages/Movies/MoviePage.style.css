@@ -18,18 +18,6 @@ html {
   margin: 10px;
 }
 
-.page-link {
-  background-color: black !important;
-  color: white !important;
-  border: none;
-}
-
-.paginationContainer {
-  display: flex;
-  justify-content: center;
-  padding: 80px;
-}
-
 @media (max-width: 720px) {
   .MovieBox {
     margin-top: 400px !important;
@@ -51,24 +39,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .paginationContainer {
-    padding: 20px 0;
-  }
-
-  .pagination {
-    display: flex;
-    justify-content: center;
-  }
-
-  .pagination .page-item {
-    display: none;
-  }
-
-  .pagination .page-item:first-child,
-  .pagination .page-item:last-child {
-    display: inline-block;
   }
 }
 
