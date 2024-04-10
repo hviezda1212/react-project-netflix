@@ -31,6 +31,9 @@ html {
 }
 
 @media (max-width: 720px) {
+  .MovieBox {
+    margin-top: 400px;
+  }
   .SortButton {
     position: absolute;
     top: 0;
@@ -51,7 +54,7 @@ html {
   }
 
   .paginationContainer {
-    padding: 20px 0; 
+    padding: 20px 0;
   }
 
   .pagination {
@@ -60,12 +63,12 @@ html {
   }
 
   .pagination .page-item {
-    display: none; 
+    display: none;
   }
 
   .pagination .page-item:first-child,
   .pagination .page-item:last-child {
-    display: inline-block; 
+    display: inline-block;
   }
 }
 
