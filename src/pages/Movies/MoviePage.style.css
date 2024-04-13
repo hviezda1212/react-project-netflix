@@ -19,16 +19,9 @@ html {
 }
 
 @media (max-width: 720px) {
-  .MovieBox {
-    margin-top: 400px !important;
-  }
   .SortButton {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
-    padding-top: 100px;
   }
 
   .SortButton button {
