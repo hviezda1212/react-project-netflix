@@ -69,7 +69,7 @@
 
 .Container {
   opacity: 0.8;
-  background-color: transparent; /* 배경색을 투명하게 설정 */
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;

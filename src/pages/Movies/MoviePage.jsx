@@ -87,10 +87,10 @@ const MoviePage = () => {
         <Col lg={4} xs={12}>
           <Container className="SortButton">
             <Button variant="danger" onClick={handleSortPopularRank}>
-              인기순
+              Popularity
             </Button>
             <Button variant="danger" onClick={handleSortRecentRank}>
-              최신순
+              Latest
             </Button>
             <Container className="MovieGenreContainer">
               <Col lg={8} xs={10}>
@@ -111,7 +111,7 @@ const MoviePage = () => {
         <Col lg={8} xs={10} className="MovieBox">
           {displayData.length === 0 && (
             <h4 className="NoGenre" variant="info">
-              선택한 장르의 영화가 존재하지 않습니다.
+              The movie of the selected genre does not exist.
             </h4>
           )}
           <Row>

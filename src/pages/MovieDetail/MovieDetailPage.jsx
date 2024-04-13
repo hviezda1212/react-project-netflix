@@ -7,7 +7,7 @@ import MovieTab from "./MovieTabs/MovieTab";
 import LoadingSpinner from "../../common/Spinner/LoadingSpinner";
 
 const MovieDetail = () => {
-  let params = useParams(); //id 값을 가져오기 위해 선언
+  let params = useParams();
 
   const { data, isLoading, isError, error } = useMovieDetails(params);
   const posterPath = data?.poster_path;
@@ -49,10 +49,10 @@ const MovieDetail = () => {
                     </Badge>
                   ))}
                 </p>
-                <p> 연령제한 : {data?.adult ? "over 18" : "under 18"}</p>
-                <p> 개봉일자 : {data?.release_date}</p>
-                <p> 상영시간 : {data?.runtime}분</p>
-                <p> 평점 : {data?.vote_average} 점</p>
+                <p> Age : {data?.adult ? "over 18" : "under 18"}</p>
+                <p> Release Date : {data?.release_date}</p>
+                <p> Run Time : {data?.runtime}minutes</p>
+                <p> Score : {data?.vote_average}</p>
               </Col>
             </Row>
           </div>
