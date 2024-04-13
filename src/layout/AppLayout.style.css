@@ -1,13 +1,23 @@
+:root {
+  --bs-body-bg: black !important;
+  --bs-tertiary-bg-rgb: black !important;
+}
+
+body {
+  background-color: black !important;
+  color: white !important;
+}
+
 .form-control.search-box:focus {
-  box-shadow: none;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25) !important;
   border-color: var(--bs-border-color);
 }
 
 .nav-link {
-    display: block;
-    padding: 10px;
-    color: white !important;
-    text-decoration: none;
-    background: 0 0;
-    border: 0;
+  display: block;
+  padding: 10px;
+  color: white !important;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
 }

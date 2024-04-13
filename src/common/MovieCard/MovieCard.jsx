@@ -1,5 +1,6 @@
 import React from "react";
 import { Badge } from "react-bootstrap";
+import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import { faImdb } from "@fortawesome/free-brands-svg-icons";
@@ -8,6 +9,12 @@ import { useMovieGenreQuery } from "../../hooks/useMovieGenre";
 
 const MovieCard = ({ movie }) => {
   const { data: genreData } = useMovieGenreQuery();
+  const navigate = useNavigate();
+
+  const moveToDetailPage = () => {
+    navigate(`/movies/${movie.id}`);
+    window.scrollTo(0, 0);
+}
 
   const showGenre = (genreIdList) => {
     if (!genreData) return [];
@@ -29,7 +36,7 @@ const MovieCard = ({ movie }) => {
       }}
       className="movie-card"
     >
-      <div className="overlay">
+      <div className="overlay" onClick={moveToDetailPage}>
         <h2>{movie.title}</h2>
         {showGenre(movie.genre_ids).map((id) => (
           <Badge bg="danger">{id}</Badge>
