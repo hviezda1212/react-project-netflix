@@ -25,10 +25,7 @@ const MovieDetail = () => {
 
   return (
     <>
-      <div
-        className="MainPoster"
-        style={{ backgroundImage: `url(${backPoster_URL})` }}
-      >
+      <div className="">
         <Container className="Container">
           <div className="InfoContainer">
             <Row>
@@ -49,10 +46,10 @@ const MovieDetail = () => {
                     </Badge>
                   ))}
                 </p>
-                <p> Age : {data?.adult ? "over 18" : "under 18"}</p>
-                <p> Release Date : {data?.release_date}</p>
-                <p> Run Time : {data?.runtime}minutes</p>
                 <p> Score : {data?.vote_average}</p>
+                <p> Age : {data?.adult ? "over 18" : "under 18"}</p>
+                <p> Run Time : {data?.runtime}minutes</p>
+                <p> Release Date : {data?.release_date}</p>
               </Col>
             </Row>
           </div>
