@@ -17,7 +17,7 @@ const MovieReviews = () => {
             <h4 style={{ color: 'white' }}>Reviews</h4>
             {data && data.results && data.results.length > 0 ? (
                 data.results.slice(0, visibleReviews).map((review, index) => (
-                    <Card key={index} className="my-3" style={{ backgroundColor: '#f8f9fa' }}>
+                    <Card key={index} className="my-3" style={{ backgroundColor: 'black', borderColor: 'white'}}>
                         <Card.Body>
                             <Card.Title style={{ color: 'white' }}>{review?.author}</Card.Title>
                             <Card.Text style={{ color: 'white' }}>{review?.content}</Card.Text>

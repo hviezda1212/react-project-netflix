@@ -19,7 +19,7 @@ const MovieVideo = () => {
   return (
     <Container>
       <Row>
-        <h4 style={{ color: "white" }}>Preview</h4>
+        <h4 style={{ color: "white" }}>Video</h4>
         <iframe
           id="ytplayer"
           type="text/html"
