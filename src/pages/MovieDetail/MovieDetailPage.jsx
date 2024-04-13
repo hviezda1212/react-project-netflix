@@ -14,7 +14,6 @@ const MovieDetail = () => {
   const backPoster = data?.backdrop_path;
 
   const poster_URL = `https://media.themoviedb.org/t/p/w300_and_h450_bestv2${posterPath}`;
-  const backPoster_URL = `https://image.tmdb.org/t/p/original${backPoster}`;
 
   if (isLoading) {
     return <div>{LoadingSpinner()}</div>;
@@ -25,7 +24,7 @@ const MovieDetail = () => {
 
   return (
     <>
-      <div className="">
+      <div className="MainArea">
         <Container className="Container">
           <div className="InfoContainer">
             <Row>

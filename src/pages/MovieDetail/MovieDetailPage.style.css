@@ -63,8 +63,8 @@
   border-radius: 10px;
 }
 
-.MainPoster {
-  background-size: cover;
+.MainArea {
+  background-color: rgb(47, 47, 47);
 }
 
 .Container {
